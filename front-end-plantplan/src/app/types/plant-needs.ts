@@ -1,0 +1,1 @@
+type PlantNeed_Type = "light" | "water" | "soil" | "unknown";

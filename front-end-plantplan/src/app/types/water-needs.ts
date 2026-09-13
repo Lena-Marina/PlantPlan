@@ -1,0 +1,1 @@
+type WaterNeed_Type = "low" | "moderate" | "high" | "unknown";

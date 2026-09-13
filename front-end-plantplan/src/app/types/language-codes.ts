@@ -1,0 +1,1 @@
+type LanguageCode = "EN" | "DE";

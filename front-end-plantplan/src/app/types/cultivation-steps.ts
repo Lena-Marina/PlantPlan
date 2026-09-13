@@ -1,0 +1,22 @@
+//ToDo: check what is actually used!
+
+export type CultivationStep_Type = "SOW_IN_GARDEN_BED" 
+                            | "SOW_IN_POT" 
+                            | "PLANT_IN_GARDEN_BED" 
+                            | "PRUNE" 
+                            | "HARVEST" 
+                            | "MID_HARVEST"
+                            | "FERTILIZE" 
+                            | "WATER" 
+                            | "PEST_CONTROL" 
+                            | "DISEASE_CONTROL" 
+                            | "WEED" 
+                            | "MULCH" 
+                            | "PROPAGATION" 
+                            | "TRAIN" 
+                            | "SUPPORT" 
+                            | "THIN" 
+                            | "SPACE" 
+                            | "COVER_CROPPING" 
+                            | "POLLINATE" 
+                            ;

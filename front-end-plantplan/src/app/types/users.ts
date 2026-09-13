@@ -1,0 +1,1 @@
+type User_Type = "admin" | "gardener";
