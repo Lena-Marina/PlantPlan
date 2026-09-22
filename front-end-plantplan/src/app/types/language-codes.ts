@@ -1,1 +1,1 @@
-type LanguageCode = "EN" | "DE";
+export type LanguageCode = "EN" | "DE";

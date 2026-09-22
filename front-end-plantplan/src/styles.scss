@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "sass:map";
+
+/* Admin-Color-Theme */
+
+$admin-color-theme: (
+  primary: #246826,
+  secondary: #11c44a,
+  background: #c6f3b9,
+  text: #212121,
+  highlight_text: #fcff64
+);
+
+.admin-theme {
+  --primary: #{map.get($admin-color-theme, primary)};
+  --secondary: #{map.get($admin-color-theme, secondary)};
+  --background: #{map.get($admin-color-theme, background)};
+  --text: #{map.get($admin-color-theme, text)};
+  --highlight-text: #{map.get($admin-color-theme, highlight_text)};
+}
+
+
+/* Gardener-Color-Theme */
+
+$gardener-color-theme: (
+  primary: #3db541,
+  secondary: #63e78d,
+  background: #c6f3b9,
+  text: #212121,
+  highlight_text: #fcff64
+);
+
+.gardener-theme {
+  --primary: #{map.get($gardener-color-theme, primary)};
+  --secondary: #{map.get($gardener-color-theme, secondary)};
+  --background: #{map.get($gardener-color-theme, background)};
+  --text: #{map.get($gardener-color-theme, text)};
+  --highlight-text: #{map.get($gardener-color-theme, highlight_text)};
+}
+

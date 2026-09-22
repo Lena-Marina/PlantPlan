@@ -1,7 +1,7 @@
 export class PlantDimensions {
     width!: number; // "!" assertion operator needed, because I use Setters in the constructor
     length!: number; // "!" assertion operator needed, because I use Setters in the constructor
-    height?: number; // "?" optional operator needed, because I don't use height yet / am not shure If I will
+    height?: number; // "?" optional operator, because I don't use height yet / am not shure If I will
 
     //Constructor
     constructor(width: number, length: number, height?: number) {

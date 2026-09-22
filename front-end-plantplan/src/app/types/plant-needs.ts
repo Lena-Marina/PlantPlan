@@ -1,1 +1,1 @@
-type PlantNeed_Type = "light" | "water" | "soil" | "unknown";
+export type PlantNeed_Type = "light" | "water" | "soil" | "unknown";

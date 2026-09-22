@@ -1,6 +1,6 @@
 //should be sorted alphabetically and needs to be updated
 
-type PlantFamily = "Tomato" 
+export type PlantFamily_Type = "Tomato" 
                 | "Potato" 
                 | "Pepper" 
                 | "Eggplant" 

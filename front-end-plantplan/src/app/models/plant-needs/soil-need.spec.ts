@@ -1,7 +1,7 @@
-import { SoilNeed } from './plant-needs/soil-need';
+import { SoilNeed } from './soil-need';
 
 describe('SoilNeed', () => {
   it('should create an instance', () => {
-    expect(new SoilNeed()).toBeTruthy();
+    expect(new SoilNeed("chalky")).toBeTruthy();
   });
 });

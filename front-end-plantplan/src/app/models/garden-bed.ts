@@ -9,9 +9,9 @@ export class GardenBed {
     creator: User;
     name: string;
     description: string;
-    startCalendarWeek!: number; // I need the "!" assertion operator , because I use Setters in the constructor
-    length!: number; // I need the "!" assertion operator , because I use Setters in the constructor
-    width!: number; // I need the "!" assertion operator , because I use Setters in the constructor
+    startCalendarWeek!: number; // "!" assertion operator needed, because I use Setters in the constructor
+    length!: number; // "!" assertion operator needed, because I use Setters in the constructor
+    width!: number; // "!" assertion operator needed, because I use Setters in the constructor
     soilCondition: SoilNeed_Type;
     lightCondition: LightNeed_Type;
     is_public: boolean;

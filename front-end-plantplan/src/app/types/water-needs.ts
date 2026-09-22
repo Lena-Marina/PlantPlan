@@ -1,1 +1,1 @@
-type WaterNeed_Type = "low" | "moderate" | "high" | "unknown";
+export type WaterNeed_Type = "low" | "moderate" | "high" | "unknown";

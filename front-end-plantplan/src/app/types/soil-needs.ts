@@ -1,0 +1,1 @@
+export type SoilNeed_Type = "sandy" | "loamy" | "clay" | "silty" | "peaty" | "chalky" | "unknown";

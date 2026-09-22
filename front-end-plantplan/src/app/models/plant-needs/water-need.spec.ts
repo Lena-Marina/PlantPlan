@@ -1,7 +1,7 @@
-import { WaterNeed } from './plant-needs/water-need';
+import { WaterNeed } from './water-need';
 
 describe('WaterNeed', () => {
   it('should create an instance', () => {
-    expect(new WaterNeed()).toBeTruthy();
+    expect(new WaterNeed("moderate")).toBeTruthy();
   });
 });
