@@ -1,0 +1,12 @@
+<p>{{ testText() }}</p>
+
+<select
+  [ngModel]="appState.selectedLanguage()"
+  (ngModelChange)="changeLanguage($event)"
+>
+  @for (language of languages; track language) {
+    <option [value]="language">
+      {{ language }}
+    </option>
+  }
+</select>
