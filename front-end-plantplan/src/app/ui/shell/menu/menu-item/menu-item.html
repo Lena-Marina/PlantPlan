@@ -1,0 +1,9 @@
+<a
+  class="menu-item"
+  [routerLink]="route()"
+  routerLinkActive="selected"
+  [routerLinkActiveOptions]="{ exact: true }"
+  (click)="itemClicked.emit()"
+>
+  {{ label()() }}
+</a>

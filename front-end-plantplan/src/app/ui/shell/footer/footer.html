@@ -1,0 +1,64 @@
+<div class="footer">
+    <div id="footer-first-row" class="row">
+        <div class="col-4 footer-cell-row">
+            <a routerLink="/support">
+                {{ txtSupport() }}
+            </a>
+        </div>
+
+        <div class="col-4 footer-cell-row">
+            <a routerLink="/about">
+                {{ txtAbout() }}
+            </a>
+        </div>
+
+        <div class="col-4 footer-cell-row">
+
+            <a routerLink="/imprint">
+                {{ txtImprint() }}
+            </a>
+        </div>
+    </div>
+
+    @if (this.appState.isMobile()) {
+    <div id="language-selection-footer" class="row">
+        <div class="col-12 footer-cell-row">
+            {{txtLabelLanguageSelection()}}
+            <app-language-selector 
+            [label]="txtLabelLanguageSelection" 
+            />
+        </div>
+    </div>
+    }
+
+    <div class="footer-attribution row">
+        @if(!this.appState.isMobile()){
+            <div class="col-4 footer-cell-row"> </div>
+        }
+        <div class="footer-cell-column" 
+            [class.col-4]="!this.appState.isMobile()" 
+            [class.col-12]="this.appState.isMobile()">
+            <p>
+                <strong>{{ txtAttribution() }}</strong>
+            </p>
+            <div class="footer-cell-column">
+
+                <p><a href="https://www.flaticon.com/free-icons/plant" title="plant icons">Plant icons created by
+                        Magnific - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/down-arrow" title="down arrow icons">Down arrow icons
+                        created by feen - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Dave
+                        Gandy - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Dave
+                        Gandy - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/menu-burger" title="menu-burger icons">Menu-burger icons
+                        created by deha21 - Flaticon</a></p>
+            </div>
+        </div>
+        @if(!this.appState.isMobile()){
+        <div class="col-4 footer-cell-row"> </div>
+        }
+
+    </div>
+
+</div>

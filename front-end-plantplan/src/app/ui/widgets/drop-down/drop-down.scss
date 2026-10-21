@@ -1,0 +1,57 @@
+.plant-plan-drop-down {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-button {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--background);
+  color: var(--primary);
+
+  border: solid 2px;
+  border-color: var(--primary);
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: var(--secondary);
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  background-color: var(--background);
+
+  border: 1px solid var(--primary);
+
+  z-index: 1000;
+}
+
+.option {
+  padding: 5px 5px;
+  cursor: pointer;
+  color: black;
+  border-bottom: solid 1px gray;
+}
+
+.option:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+#label {
+    color: var(--background);
+}

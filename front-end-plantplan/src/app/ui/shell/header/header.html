@@ -1,0 +1,48 @@
+@if(!this.appState.isMobile()){
+  <div class="container-fluid header">
+    <div class="row">
+
+      <div class="menuTitel col-2">
+        
+      </div>
+
+      <div class="col-10 header-right">
+
+        {{ txtWelcome() }}
+
+        
+        <div class="languageSelection">
+            {{txtLabelLanguageSelection()}}
+              <app-language-selector
+                [label]="txtLabelLanguageSelection" 
+              />
+              <div class="col-12 footer-cell-row">
+      
+        </div>
+        </div>
+
+         @if(appState.loggedInUser()){
+          <a class="logout"
+          (click)="this.appState.logout()">
+            {{ txtLogout() }}
+          </a>
+         }
+         @else{
+          <a class="logout">
+            {{ txtLogin() }}
+          </a>
+
+         }
+        
+
+      </div>
+
+    </div>
+  </div>
+}
+@else { <!--isMobile()-->
+  <div class="header header-mobile">
+    {{ txtWelcome() }}
+  </div>
+  
+}

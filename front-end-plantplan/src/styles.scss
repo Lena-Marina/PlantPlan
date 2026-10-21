@@ -1,15 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Contrast checker: https://webaim.org/resources/contrastchecker/*/
+
 @use "sass:map";
 
 /* Admin-Color-Theme */
 
 $admin-color-theme: (
-  primary: #246826,
-  secondary: #11c44a,
-  background: #c6f3b9,
-  text: #212121,
-  highlight_text: #fcff64
+  primary: #4d694e,
+  secondary: #fff3d5, 
+  background: #fdf1d5,
+  text: #fff3d5, 
+  highlight_text: #4d694e,
+  link:#d4a853,
+  error: #c54f2d
 );
 
 .admin-theme {
@@ -18,17 +22,21 @@ $admin-color-theme: (
   --background: #{map.get($admin-color-theme, background)};
   --text: #{map.get($admin-color-theme, text)};
   --highlight-text: #{map.get($admin-color-theme, highlight_text)};
+  --link: #{map.get($admin-color-theme, link)};
+  --error: #{map.get($admin-color-theme, error_msg)};
 }
 
 
 /* Gardener-Color-Theme */
 
 $gardener-color-theme: (
-  primary: #3db541,
-  secondary: #63e78d,
-  background: #c6f3b9,
-  text: #212121,
-  highlight_text: #fcff64
+  primary: #2A541C,
+  secondary: #f1e8c7,
+  background: #fdf1d5,
+  text: #f1e8c7,
+  highlight_text: #2A541C,
+  link: #d4a853,
+  error: #c54f2d
 );
 
 .gardener-theme {
@@ -37,5 +45,34 @@ $gardener-color-theme: (
   --background: #{map.get($gardener-color-theme, background)};
   --text: #{map.get($gardener-color-theme, text)};
   --highlight-text: #{map.get($gardener-color-theme, highlight_text)};
+  --link: #{map.get($gardener-color-theme, link)};
+  --error: #{map.get($gardener-color-theme, error_msg)};
 }
 
+
+app-root {
+  display: block;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+html,
+body {
+  font-family: Rubik, sans-serif;
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--background);
+}
+
+html, body a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+html, body a:hover {
+  color: var(--highlight-text);
+}
+
+.main {
+  min-height: 100vh;
+}

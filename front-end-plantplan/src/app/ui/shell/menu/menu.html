@@ -1,0 +1,44 @@
+
+@if(this.appState.menuOpen()){
+    <div class="menu-open-container">
+        <div class="menuTitel"
+            (click)="changeMenuOpen()"
+        >
+            {{ txtMenuTitel() }}
+      
+            @if(this.appState.menuOpen()){
+                <img class="arrow" 
+                    src="/icons/chevron-pointing-to-the-left.png" 
+                    alt="arrow symbol pointing left"
+                    aria-label="{{ txtCloseMenu() }}">
+            }
+            @else {
+                <img class="arrow" src="/icons/down.png" alt="arrow symbol pointing down">
+            }
+        </div>
+
+        @if(this.appState.menuOpen()){
+        <nav>
+            @for (item of menuItems(); track item.route) {
+                <app-menu-item
+                    [label]="item.label"
+                    [route]="item.route"
+                    (itemClicked)="onMenuItemClicked(item)"
+                />
+            }
+        </nav>
+
+        }
+    
+    </div>
+}
+@else {
+    <div id="menu-closed-container"
+        (click)="changeMenuOpen()"
+        [class.min-width]="this.appState.isMobile()"
+
+    >
+        <img id="burger-menu" src="/icons/menu-burger.png" alt="symbol for a burger menu">
+    </div>
+
+}

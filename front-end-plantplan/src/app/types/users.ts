@@ -1,1 +1,1 @@
-export type User_Type = "admin" | "gardener";
+export type User_Type = "ADMIN" | "GARDENER" | "GUEST";

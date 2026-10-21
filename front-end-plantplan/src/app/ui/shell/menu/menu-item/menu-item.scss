@@ -1,0 +1,24 @@
+
+.menu-item {
+  display: block;
+
+  background-color: var(--primary);
+  color: var(--text);
+
+  padding: 15px;
+
+  text-decoration: none;
+
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.menu-item:hover {
+  background-color: var(--secondary);
+  color: var(--highlight-text);
+}
+
+.menu-item.selected {
+  background-color: var(--secondary);
+  color: var(--highlight-text);
+}
